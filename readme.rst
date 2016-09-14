@@ -12,6 +12,7 @@ Change logs
 ===============================
 
 * 2016-09-14
+    * Collecting input and building dialogs: what's your name? Hello <name provided>!
     * answer Hello World, always
     * Setup the debug: `node --debug-brk app.js`
 

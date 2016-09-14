@@ -1,7 +1,7 @@
 var builder = require('botbuilder');
 
 var connector = new builder.ConsoleConnector().listen();
-var recognizer = new builder.LuisRecognizer('https://api.projectoxford.ai/luis/v1/application?id=<you id>&subscription-key=<your key>');
+var recognizer = new builder.LuisRecognizer('https://api.projectoxford.ai/luis/v1/application?<parameters>');
 var intents = new builder.IntentDialog({ recognizers: [recognizer] });
 var bot = new builder.UniversalBot(connector);
 
@@ -98,5 +98,17 @@ bot.dialog('/cards', [
                     .tap(builder.CardAction.openUrl(session, "https://i.ytimg.com/vi/P07FchevFqE/hqdefault.jpg"))
             ]);
         session.endDialog(msg);
+    }
+]);
+
+// Global actions
+bot.beginDialogAction('help', '/help', { matches: /^help/i });
+bot.endConversationAction('goodbye', 'Goodbye :)', { matches: /^goodbye/i });
+
+// Help dialog
+bot.dialog('/help', [
+    function (session) {
+        session.send("I'm the transportation bot. You can ask me when your next train is or ask me to change your name.");
+        session.endDialog();
     }
 ]);

@@ -31,6 +31,7 @@ Change logs
 ===============================
 
 * 2016-09-14
+    * Exercise 5: Adding global actions
     * Exercise 4: Determining Intent
         * Task 1 – Determine intent using regular expressions
         * Task 2 – Create a language model with LUIS

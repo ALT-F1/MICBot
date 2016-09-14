@@ -5,7 +5,7 @@
             "name": "Launch",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/index.js",
+            "program": "${workspaceRoot}/app.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
@@ -15,7 +15,11 @@
                 "--nolazy"
             ],
             "env": {
-                "NODE_ENV": "development"
+                "NODE_ENV": "development",
+                "MICROSOFT_APP_ID": "14051212-5a16-4a3b-bca0-796cab447579",
+                "MICROSOFT_APP_PASSWORD": "vRxtx1p1hdb42SopMRs1VNV",
+                "LUIS_ENDPOINT": "https://api.projectoxford.ai/luis/v1/application?id=ead0d73d-e269-4de4-89e4-46ce88f93d53&subscription-key=6b87e72d41f34bd795547bd56eeec2d3",
+                "NGROK": "https://a571ef46.ngrok.io"
             },
             "console": "internalConsole",
             "sourceMaps": false,

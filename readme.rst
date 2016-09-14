@@ -3,12 +3,12 @@ The bot answers "hello world always"
 
 Several exercices have been coded: 
 
-Exercise 1: Creating a HelloWorld bot
-Exercise 2: Collecting input and building dialogs
-Exercise 3: Returning results
-Exercise 4: Determining Intent
-Exercise 5: Adding global actions
-Exercise 6: Integrating your bot with channels
+* Exercise 1: Creating a HelloWorld bot
+* Exercise 2: Collecting input and building dialogs
+* Exercise 3: Returning results
+* Exercise 4: Determining Intent
+* Exercise 5: Adding global actions
+* Exercise 6: Integrating your bot with channels
 
 Doing it yourself? https://aka.ms/handsonbots
 
@@ -34,6 +34,7 @@ Change logs
     * Exercise 6: Integrating your bot with channels
         * Task 1 – Use the ChatConnector
         * Task 2 – Run the bot locally `ngrok http 3978`
+        * Task 3 – Register the bot in the developer portal - https://dev.botframework.com/bots?id=<name of the bot>
     * Exercise 5: Adding global actions
     * Exercise 4: Determining Intent
         * Task 1 – Determine intent using regular expressions

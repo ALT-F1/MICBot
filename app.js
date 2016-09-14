@@ -14,7 +14,7 @@ var connector = new builder.ChatConnector({
 });
 
 // var recognizer = new builder.LuisRecognizer('https://api.projectoxford.ai/luis/v1/application?id=<input your id>&subscription-key=<input your key>');
-var recognizer = new builder.LuisRecognizer('https://api.projectoxford.ai/luis/v1/application?id=ead0d73d-e269-4de4-89e4-46ce88f93d53&subscription-key=6b87e72d41f34bd795547bd56eeec2d3');
+var recognizer = new builder.LuisRecognizer(process.env.LUIS_ENDPOINT);
 var intents = new builder.IntentDialog({ recognizers: [recognizer] });
 var bot = new builder.UniversalBot(connector);
 

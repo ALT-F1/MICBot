@@ -1,15 +1,15 @@
 var builder = require('botbuilder');
 
 var connector = new builder.ConsoleConnector().listen();
-
+var recognizer = new builder.LuisRecognizer('https://api.projectoxford.ai/luis/v1/application?id=<you id>&subscription-key=<your key>');
+var intents = new builder.IntentDialog({ recognizers: [recognizer] });
 var bot = new builder.UniversalBot(connector);
-var intents = new builder.IntentDialog();
 
 bot.dialog('/', intents);
 
-intents.matches(/^travel/i, '/travel');
+intents.matches('travel', '/travel');
 
-intents.matches(/^change name/i, [
+intents.matches('changeName', [
     function (session) {
         session.beginDialog('/profile');
     },

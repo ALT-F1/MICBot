@@ -34,6 +34,7 @@ Change logs
     * Exercise 4: Determining Intent
         * Task 1 – Determine intent using regular expressions
         * Task 2 – Create a language model with LUIS
+        * Task 3 – Determine intent using LUIS
     * Exercise 3: Returning results
         * Task 1 – Returning an image attachment
         * Task 2 – Creating a rich card

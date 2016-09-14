@@ -1,9 +1,24 @@
 var builder = require('botbuilder');
+var restify = require('restify');
 
-var connector = new builder.ConsoleConnector().listen();
-var recognizer = new builder.LuisRecognizer('https://api.projectoxford.ai/luis/v1/application?<parameters>');
+var server = restify.createServer();
+server.listen(process.env.port || process.env.PORT || 3978, function () {
+   console.log('%s listening to %s', server.name, server.url); 
+});
+
+// Create chat bot
+// var connector = new builder.ConsoleConnector().listen();
+var connector = new builder.ChatConnector({
+    appId: process.env.MICROSOFT_APP_ID,
+    appPassword: process.env.MICROSOFT_APP_PASSWORD
+});
+
+// var recognizer = new builder.LuisRecognizer('https://api.projectoxford.ai/luis/v1/application?id=<input your id>&subscription-key=<input your key>');
+var recognizer = new builder.LuisRecognizer('https://api.projectoxford.ai/luis/v1/application?id=ead0d73d-e269-4de4-89e4-46ce88f93d53&subscription-key=6b87e72d41f34bd795547bd56eeec2d3');
 var intents = new builder.IntentDialog({ recognizers: [recognizer] });
 var bot = new builder.UniversalBot(connector);
+
+server.post('/api/messages', connector.listen());
 
 bot.dialog('/', intents);
 

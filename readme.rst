@@ -31,6 +31,8 @@ Change logs
 ===============================
 
 * 2016-09-14
+    * Exercise 6: Integrating your bot with channels
+        * Task 1 – Use the ChatConnector
     * Exercise 5: Adding global actions
     * Exercise 4: Determining Intent
         * Task 1 – Determine intent using regular expressions

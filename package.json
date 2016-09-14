@@ -1,0 +1,22 @@
+{
+  "name": "micbot",
+  "version": "1.0.0",
+  "description": "First bot built with MIC 2016-09-14, the bot answers hello world always",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bot",
+    "microsoft",
+    "ngrok",
+    "node",
+    "vs",
+    "code"
+  ],
+  "author": "Abdelkrim BOUJRAF",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.2.3"
+  }
+}

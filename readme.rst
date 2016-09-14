@@ -34,6 +34,7 @@ Change logs
     * Exercise 2 Collecting input and building dialogs
         * Task 1 – Collecting basic input - what's your name? Hello <name provided>!
         * Task 2 – Adding dialogs and memory - what's your name? Hello <name provided>!
+            *  users shares his train schedules, from/to location
     Exercise 1: Creating a HelloWorld bot
         * Task 1 – Installation
         * Task 2 – Create a HelloWorld bot

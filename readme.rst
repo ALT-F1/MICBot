@@ -33,6 +33,7 @@ Change logs
 * 2016-09-14
     * Exercise 3: Returning results
         * Task 1 – Returning an image attachment
+        * Task 2 – Creating a rich card
     * Exercise 2 Collecting input and building dialogs
         * Task 1 – Collecting basic input - what's your name? Hello <name provided>!
         * Task 2 – Adding dialogs and memory - what's your name? Hello <name provided>!
@@ -48,7 +49,8 @@ Change logs
 Legal
 ===============================
 
-* (c) ALT-F1 2016 - http://www.alt-f1.be
+* 
+Copyright |copy| 2016 by ALT-F1 http://www.alt-f1.be, all rights reserved. 
 
 * Microsoft bot framework preview - online services agreement: https://www.botframework.com/Content/Microsoft-Bot-Framework-Preview-Online-Services-Agreement.htm
 * Developer code of conduct for bot framework: https://www.botframework.com/Content/Developer-Code-of-Conduct-for-Microsoft-Bot-Framework.htm

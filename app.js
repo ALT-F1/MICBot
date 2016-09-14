@@ -25,15 +25,17 @@ bot.dialog('/', [
         session.userData.arrival = results.response.entity;
         // Display the results
         builder.Prompts.time(session, 'When do you want to leave');
+       
 
     },
     function (session, results) {
         // Store the departure time
         session.userData.departureTime = builder.EntityRecognizer.resolveTime([results.response]);
         session.beginDialog('/picture');
-        
+        session.beginDialog('/cards');
+
         session.send('Thanks for travelling with us from ' + session.userData.departure + ' to ' + session.userData.arrival + '!');
-        
+
     }
 
 ]);
@@ -57,6 +59,24 @@ bot.dialog('/picture', [
         }]);
         session.endDialog(msg);
     }
+]);
 
-
-])
+bot.dialog('/cards', [
+    function (session) {
+        var msg = new builder.Message(session)
+            .textFormat(builder.TextFormat.xml)
+            .attachments([
+                new builder.HeroCard(session)
+                    .title("9h15 -> 10h11")
+                    .subtitle("0 changes")
+                    .text(session.userData.departure + " -> " + session.userData.arrival)
+                    .tap(builder.CardAction.openUrl(session, "https://i.ytimg.com/vi/P07FchevFqE/hqdefault.jpg")),
+                new builder.HeroCard(session)
+                    .title("9h37 -> 10h59")
+                    .subtitle("1 change")
+                    .text(session.userData.departure + " -> " + session.userData.arrival)
+                    .tap(builder.CardAction.openUrl(session, "https://i.ytimg.com/vi/P07FchevFqE/hqdefault.jpg"))
+            ]);
+        session.endDialog(msg);
+    }
+]);

@@ -31,6 +31,8 @@ Change logs
 ===============================
 
 * 2016-09-14
+    * Exercise 3: Returning results
+        * Task 1 – Returning an image attachment
     * Exercise 2 Collecting input and building dialogs
         * Task 1 – Collecting basic input - what's your name? Hello <name provided>!
         * Task 2 – Adding dialogs and memory - what's your name? Hello <name provided>!

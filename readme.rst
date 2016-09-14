@@ -36,6 +36,7 @@ Change logs
         * Task 2 – Run the bot locally `ngrok http 3978`
         * Task 3 – Register the bot in the developer portal - https://dev.botframework.com/bots?id=<name of the bot>
         * Task 4: run the chatbot locally in VS Code
+        * Task 5: Test the chatbot
     * Exercise 5: Adding global actions
     * Exercise 4: Determining Intent
         * Task 1 – Determine intent using regular expressions

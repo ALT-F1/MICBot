@@ -3,8 +3,28 @@ var builder = require('botbuilder');
 var connector = new builder.ConsoleConnector().listen();
 
 var bot = new builder.UniversalBot(connector);
+var intents = new builder.IntentDialog();
 
-bot.dialog('/', [
+bot.dialog('/', intents);
+
+intents.matches(/^travel/i, '/travel');
+
+intents.matches(/^change name/i, [
+    function (session) {
+        session.beginDialog('/profile');
+    },
+    function (session, results) {
+        session.send('Ok... Changed your name to %s', session.userData.name);
+    }
+]);
+
+intents.onDefault([
+    function (session) {
+        session.send("Sorry. I didn't understand. Either type 'travel' or 'change name'.");
+    },
+]);
+
+bot.dialog('/travel', [
     function (session, results, next) {
         if (!session.userData.name) {
             session.beginDialog('/profile');
@@ -25,7 +45,7 @@ bot.dialog('/', [
         session.userData.arrival = results.response.entity;
         // Display the results
         builder.Prompts.time(session, 'When do you want to leave');
-       
+
 
     },
     function (session, results) {

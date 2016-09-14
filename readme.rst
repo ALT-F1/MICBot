@@ -31,6 +31,8 @@ Change logs
 ===============================
 
 * 2016-09-14
+    * Exercise 4: Determining Intent
+        * Task 1 – Determine intent using regular expressions
     * Exercise 3: Returning results
         * Task 1 – Returning an image attachment
         * Task 2 – Creating a rich card

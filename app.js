@@ -125,12 +125,12 @@ bot.dialog('/cards', [
                     .title("9h15 -> 10h11")
                     .subtitle("0 changes")
                     .text(session.userData.departure + " -> " + session.userData.arrival)
-                    .tap(builder.CardAction.openUrl(session, "https://i.ytimg.com/vi/P07FchevFqE/hqdefault.jpg")),
+                    .tap(builder.CardAction.openUrl(session, "https://cdn3.iconfinder.com/data/icons/3d-printing-icon-set/64/Start.png")),
                 new builder.HeroCard(session)
                     .title("9h37 -> 10h59")
                     .subtitle("1 change")
                     .text(session.userData.departure + " -> " + session.userData.arrival)
-                    .tap(builder.CardAction.openUrl(session, "https://i.ytimg.com/vi/P07FchevFqE/hqdefault.jpg"))
+                    .tap(builder.CardAction.openUrl(session, "https://cdn2.iconfinder.com/data/icons/travel-25/24/travel-arrival-64.png"))
             ]);
         session.endDialog(msg);
     }

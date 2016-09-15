@@ -29,36 +29,37 @@ Prerequisite
 ===============================
 .vscode/launch.json
 ===============================
-`
-"configurations": [
-        {
-            "name": "Launch",
-            "type": "node",
-            "request": "launch",
-            "program": "${workspaceRoot}/app.js",
-            "stopOnEntry": false,
-            "args": [],
-            "cwd": "${workspaceRoot}",
-            "preLaunchTask": null,
-            "runtimeExecutable": null,
-            "runtimeArgs": [
-                "--nolazy"
-            ],
-            "env": {
-                "NODE_ENV": "development",
-                "MICROSOFT_APP_ID": "your_key",
-                "MICROSOFT_APP_PASSWORD": "your_password",
-                "LUIS_ENDPOINT": "https://api.projectoxford.ai/luis/v1/application?id=<your id>&subscription-key=<your key>",
-                "NGROK": "https://<your sub domain>.ngrok.io",
-                "APP_INSIGHT_INSTRUMENTATION_KEY": "<your key>"
-            },
-            "console": "internalConsole",
-            "sourceMaps": false,
-            "outDir": null
-        }
-        ...
-    ]
-`
+
+ensure that you have the following content inside the launch.json file. Replace your keys inside the placeholders::
+
+    "configurations": [
+            {
+                "name": "Launch",
+                "type": "node",
+                "request": "launch",
+                "program": "${workspaceRoot}/app.js",
+                "stopOnEntry": false,
+                "args": [],
+                "cwd": "${workspaceRoot}",
+                "preLaunchTask": null,
+                "runtimeExecutable": null,
+                "runtimeArgs": [
+                    "--nolazy"
+                ],
+                "env": {
+                    "NODE_ENV": "development",
+                    "MICROSOFT_APP_ID": "your_key",
+                    "MICROSOFT_APP_PASSWORD": "your_password",
+                    "LUIS_ENDPOINT": "https://api.projectoxford.ai/luis/v1/application?id=<your id>&subscription-key=<your key>",
+                    "NGROK": "https://<your sub domain>.ngrok.io",
+                    "APP_INSIGHT_INSTRUMENTATION_KEY": "<your key>"
+                },
+                "console": "internalConsole",
+                "sourceMaps": false,
+                "outDir": null
+            }
+            ...
+        ]
 
 ===============================
 Change logs

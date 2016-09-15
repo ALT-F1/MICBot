@@ -98,6 +98,7 @@ Change logs
 Legal
 ===============================
 
+* Apache License Version 2.0 - see LICENSE.txt
 * Copyright |copy| 2016 by ALT-F1 http://www.alt-f1.be, all rights reserved. 
 * Microsoft bot framework preview - online services agreement: https://www.botframework.com/Content/Microsoft-Bot-Framework-Preview-Online-Services-Agreement.htm
 * Developer code of conduct for bot framework: https://www.botframework.com/Content/Developer-Code-of-Conduct-for-Microsoft-Bot-Framework.htm

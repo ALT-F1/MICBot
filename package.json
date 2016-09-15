@@ -17,6 +17,7 @@
   "author": "Abdelkrim BOUJRAF",
   "license": "ISC",
   "dependencies": {
+    "applicationinsights": "^0.15.19",
     "botbuilder": "^3.2.3",
     "restify": "^5.0.0-beta-1"
   }

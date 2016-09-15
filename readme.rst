@@ -27,14 +27,50 @@ Prerequisite
 * Visual Studio Code
 
 ===============================
+.vscode/launch.json
+===============================
+`
+"configurations": [
+        {
+            "name": "Launch",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/app.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development",
+                "MICROSOFT_APP_ID": "your_key",
+                "MICROSOFT_APP_PASSWORD": "your_password",
+                "LUIS_ENDPOINT": "https://api.projectoxford.ai/luis/v1/application?id=<your id>&subscription-key=<your key>",
+                "NGROK": "https://<your sub domain>.ngrok.io",
+                "APP_INSIGHT_INSTRUMENTATION_KEY": "<your key>"
+            },
+            "console": "internalConsole",
+            "sourceMaps": false,
+            "outDir": null
+        }
+        ...
+    ]
+`
+
+===============================
 Change logs
 ===============================
 
 * 2016-09-14
+    * Add Application Insight
+        * `npm install applicationinsights --save`
     * Exercise 6: Integrating your bot with channels
         * Task 1 – Use the ChatConnector
         * Task 2 – Run the bot locally `ngrok http 3978`
-        * Task 3 – Register the bot in the developer portal - https://dev.botframework.com/bots?id=<name of the bot>
+        * Task 3 – Register the bot in the developer portal - `https://dev.botframework.com/bots?id=<name of the bot>`
         * Task 4: run the chatbot locally in VS Code
         * Task 5: Test the chatbot
     * Exercise 5: Adding global actions

@@ -1,5 +1,6 @@
-Bot built during a Microsoft Innovation Center session, 2016-09-14.
-The bot answers "hello world always"
+Bot built during a Microsoft Innovation Center session lead by `Nik Trogh`_ (`Nik blog`_), 2016-09-14 .
+
+Bot allowing you "to book a train" built using `Microsoft Bot Framework`_ from zero to language understanding using Machine Learning capabilities of `LUIS`_. #NodeJS #Microsoft #BotFramework #AppInsights #LUIS #MachineLearning 
 
 Several exercices have been coded: 
 
@@ -97,9 +98,7 @@ Change logs
 Legal
 ===============================
 
-* 
-Copyright |copy| 2016 by ALT-F1 http://www.alt-f1.be, all rights reserved. 
-
+* Copyright |copy| 2016 by ALT-F1 http://www.alt-f1.be, all rights reserved. 
 * Microsoft bot framework preview - online services agreement: https://www.botframework.com/Content/Microsoft-Bot-Framework-Preview-Online-Services-Agreement.htm
 * Developer code of conduct for bot framework: https://www.botframework.com/Content/Developer-Code-of-Conduct-for-Microsoft-Bot-Framework.htm
 
@@ -107,6 +106,10 @@ Copyright |copy| 2016 by ALT-F1 http://www.alt-f1.be, all rights reserved.
 .. URL Links
 
 .. _MIC: http://www.mic-brussels.be/en/home/
+.. _Nik Trogh: https://github.com/ntrogh
+.. _Nik blog: https://blogs.msdn.microsoft.com/nicktrog/
+.. _LUIS: https://www.luis.ai/
+.. _Microsoft Bot Framework: https://dev.botframework.com/
 
 .. Replacements
 .. |copy| unicode:: 0xA9 .. copyright sign

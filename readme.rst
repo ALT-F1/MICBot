@@ -107,3 +107,6 @@ Copyright |copy| 2016 by ALT-F1 http://www.alt-f1.be, all rights reserved.
 .. URL Links
 
 .. _MIC: http://www.mic-brussels.be/en/home/
+
+.. Replacements
+.. |copy| unicode:: 0xA9 .. copyright sign
